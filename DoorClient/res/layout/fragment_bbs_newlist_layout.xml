@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 论坛主布局  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ 
+
+    <com.example.communityfunction.pulltorefreshlistview.view.RefreshListView
+        android:id="@+id/bbs_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#f2eceb"
+        android:dividerHeight="20dp" />
+      
+
+</LinearLayout>

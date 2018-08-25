@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <include layout="@layout/head_other" android:id="@+id/head"/>
+    
+    <LinearLayout
+        android:id="@+id/linear_head"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/head"
+        android:background="@color/theme_color"
+        android:gravity="center">
+
+        <neo.door.utils.CircleImageView
+            xmlns:leo="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/head_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/image_head"
+            leo:border_color="#00000000"
+            leo:border_width="1dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/item1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/linear_head"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/settingitem">
+        
+        <TextView 
+            android:id="@+id/info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="我的昵称: "
+            android:textSize="20sp"/>
+        
+        <TextView 
+            android:id="@+id/info_detail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/info1"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:textSize="20sp"/>     
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/item2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/item1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/settingitem">
+        
+        <TextView 
+            android:id="@+id/info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="我的密码: "
+            android:textSize="20sp"/>
+        
+        <TextView 
+            android:id="@+id/info_detail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/info2"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:text="******"
+            android:textSize="20sp"/>     
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/item_doorpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/item2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/settingitem">
+        
+        <TextView 
+            android:id="@+id/info_doorpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="开门密码: "
+            android:textSize="20sp"/>
+        
+        <TextView 
+            android:id="@+id/info_detail_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/info_doorpassword"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:text="******"
+            android:textSize="20sp"/>     
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/item3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/item_doorpassword"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/settingitem">
+        
+        <TextView 
+            android:id="@+id/info3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="我的电话: "
+            android:textSize="20sp"/>
+        
+        <TextView 
+            android:id="@+id/info_detail3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/info3"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:textSize="20sp"/>     
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/item4"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/item3"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/settingitem">
+        
+        <TextView 
+            android:id="@+id/info4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="我的楼栋: "
+            android:textSize="20sp"/>
+        
+        <TextView 
+            android:id="@+id/info_detail4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/info4"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:textSize="20sp"/>     
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/item5"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/item4"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/settingitem">
+        
+        <TextView 
+            android:id="@+id/info5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="我的门号: "
+            android:textSize="20sp"/>
+        
+        <TextView 
+            android:id="@+id/info_detail5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/info5"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:textSize="20sp"/>     
+    </RelativeLayout>
+    
+    <Button 
+        android:id="@+id/btn_loginout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="注销帐号"
+        android:textColor="@color/white"
+        android:background="@drawable/normal_btn"/>
+
+</RelativeLayout>

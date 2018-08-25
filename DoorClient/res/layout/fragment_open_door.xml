@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/open_door_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        android:layout_weight="1">
+
+        <RelativeLayout 
+          android:id="@+id/bluetooth_open_door"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:background="@drawable/opendoor_bacground_left"
+          android:layout_weight="1"
+          >
+        <ImageView
+            android:id="@+id/bluetooth"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/blue_key"
+         	android:scaleType="fitXY"
+         	android:layout_centerInParent="true"
+             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="蓝牙开门"
+            android:layout_below="@id/bluetooth"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white"/>
+        </RelativeLayout>
+        <View 
+	        android:layout_width="4dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/white"/>
+        
+       <RelativeLayout 
+          android:id="@+id/sms_open_door"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:background="@drawable/opendoor_background_right"
+          android:layout_weight="1"
+          >
+        <ImageView
+            android:id="@+id/sms"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sms"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="短信开门"
+            android:layout_below="@id/sms"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+      <RelativeLayout
+          android:id="@+id/gprs_open_door" 
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:background="@drawable/opendoor_bacground_left"
+          android:layout_weight="1"
+          >
+        <ImageView
+            android:id="@+id/gprs"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/gpr"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="GPRS开门"
+            android:layout_below="@id/gprs"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white"/>
+       </RelativeLayout>
+        <View 
+	        android:layout_width="4dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/white"/>
+
+        <RelativeLayout
+          android:id="@+id/qr_scan_open_door" 
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:background="@drawable/opendoor_background_right"
+          android:layout_weight="1"
+          >
+        <ImageView
+            android:id="@+id/qr_scan"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/qr_scan"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"/>
+            
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="二维码开门"
+            android:layout_below="@id/qr_scan"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white"/>
+       </RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

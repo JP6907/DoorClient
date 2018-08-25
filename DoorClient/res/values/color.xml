@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <!-- 主题颜色, 苍宝石绿 -->
+    <color name="theme_color">#0088CC</color>
+	<!-- 橙绿色 -->
+    <color name="focus_color">#90EE90</color>
+    <!-- 黑色 -->
+    <color name="focus_black">#000000</color>
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!-- 亮蓝色 -->
+    <color name="light_blue">#add8e6</color>  
+    <!-- 浅蓝色 --> 
+    <color name="little_blue">#63B8FF</color> 
+    
+    <color name="black">#222222</color>
+    <drawable name="gray">#808A87</drawable>
+    <drawable name="title_bg">#ffa5a0</drawable>
+    <!--  暗紫色 -->
+    <color name="theme_color2">#DA70D6</color>
+    <!-- 浅绿 -->
+    <color name="background_color">#8FBC8F</color>
+    <!-- 绿色 -->
+    <color name="green">#99CC33</color>
+    <!-- 灰色 -->
+    <color name="background_color1">#708090</color>
+    <!-- 浅灰 -->
+    <color name="light_gray">#CCCCFF</color>
+    <!-- 爱丽丝蓝 -->
+    <color name="text_color">#F0F8FF</color>
+      
+    <!-- 个人信息 -->
+    <color name="my_imfor">#FF9966</color>
+    <color name="divider_line">#CCCCCC</color>
+    <color name="my_grade">#CC6699</color>
+    <color name="my_collection">#FFCC33</color>
+    <color name="my_skin">#99CCFF</color>
+    <color name="clear">#FF9966</color>
+    
+    <color name="selector">#CCCCCC</color>
+    <color name="selector2">#CCCCCC</color>
+</resources>

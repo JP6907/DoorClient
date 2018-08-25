@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 公告回复子布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!-- 评论人图像 -->
+
+    <com.example.communityfunction.myView.CircleImageView
+        android:id="@+id/commentItemImg"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/replyimg1" />
+    <!-- 评论人昵称、评论时间、评论内容、回复 -->
+    <!-- 评论人昵称 -->
+
+    <TextView
+        android:id="@+id/commentNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/commentItemImg"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/commentItemImg"
+        android:paddingTop="4dp"
+        android:text="小华"
+        android:textColor="@color/theme_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <!-- 回复 -->
+    <!-- 评论时间 -->
+
+    <TextView
+        android:id="@+id/commentItemTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/commentNickname"
+        android:layout_alignBottom="@+id/commentNickname"
+        android:layout_marginLeft="10dp"
+        android:text="发表于2015-11-7 11:30"
+        android:textSize="12sp" 
+        android:textColor="#C0C0C0"/>
+    <!-- 评论人内容 -->
+
+    <TextView
+        android:id="@+id/commentItemContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/replyText"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/commentItemImg"
+        android:autoLink="web|email"
+        android:lineSpacingExtra="9dp"
+        android:text="不错，可以考虑一下买不买。"
+        android:textSize="14sp" 
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/replyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/commentItemImg"
+        android:layout_marginRight="16dp"
+        android:text="回复"
+        android:textColor="#23238E"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/floorid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/replyText"
+        android:layout_alignTop="@+id/commentNickname"
+        android:paddingTop="4dp"
+        android:text="1楼"
+        android:textColor="#808069"
+        android:textSize="13sp" />
+
+</RelativeLayout>

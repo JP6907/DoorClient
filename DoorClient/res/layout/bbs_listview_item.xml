@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.example.communityfunction.myView.CircleImageView
+            android:id="@+id/commentItemImg"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/replyimg1" />
+
+        <TextView
+            android:id="@+id/bbs_content_authorname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/commentItemImg"
+            android:paddingTop="4dp"
+            android:paddingBottom="3dp"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/commentItemImg"
+            android:text="author"
+            android:textColor="@color/theme_color"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/bbs_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/commentItemImg"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/commentItemImg"
+            android:text="内容标题"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/bbs_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bbs_content_title"
+            android:layout_below="@+id/bbs_content_title"
+            android:layout_marginTop="4dp"
+            android:autoLink="all"
+            android:text="    您好，欢迎来到慧开门论坛，这是论坛的内容，请随手说出您的心声，只需一个按钮，世界更小，让我们更亲近"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+
+        <LinearLayout
+            android:id="@+id/imageGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bbs_content"
+            android:layout_below="@+id/bbs_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/relay"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/relay" />
+
+        <TextView
+            android:id="@+id/relay_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:textColor="#808A87"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/click_like"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/click_like" />
+
+        <TextView
+            android:id="@+id/click_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:textColor="#808A87"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/comment"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/comment" />
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#808A87"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

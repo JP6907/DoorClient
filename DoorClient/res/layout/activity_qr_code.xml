@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id = "@+id/devices"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <include layout="@layout/head_other" />
+    
+    <RelativeLayout
+        android:id="@+id/bluetooth_rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true">
+        
+    <Button 
+        android:id="@+id/bt_qr_open_door"
+		android:layout_width="60dp" 
+		android:layout_height="40dp"  
+		android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_centerVertical="true"
+	    android:textSize="20sp"
+		android:text="生成"
+		android:background="@drawable/btn_style_white"/> 
+	
+    <EditText
+	        android:id="@+id/qr_password"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp"
+	        android:layout_toLeftOf="@id/bt_qr_open_door"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/login_edit_normal"
+	        android:layout_centerVertical="true"
+	        android:singleLine="true"
+	        android:textSize="18sp"
+	        android:inputType="textPassword"
+	        android:hint="输入密码生成二维码"/>
+    		
+    </RelativeLayout>
+	
+    <RelativeLayout
+        android:id="@+id/qr_code_layout"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/capture"
+        android:contentDescription="@string/app_name" >
+
+        <ImageView
+            android:id="@+id/qr_code_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/open_door_select"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/qr_code_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="请输入六位正确密码生成二维码" />
+    
+</RelativeLayout>

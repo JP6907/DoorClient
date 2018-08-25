@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入您对该公司的评分:"
+        android:textSize="21sp"/>
+    
+    <EditText 
+        android:id="@+id/et_set_score"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/login_edit_normal"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:hint="请输入您心中的分数"/>
+	
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 公告回复子布局 -->
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+>
+
+		<!-- 评论人图像 -->
+	    <com.example.communityfunction.myView.CircleImageView
+	        android:id="@+id/commentItemImg"
+	        android:layout_width="60dp"
+	        android:layout_height="60dp"      
+	        android:layout_margin="5dp"
+	        android:contentDescription="@string/app_name"
+	        android:src="@drawable/replyimg1"/>
+	    <!-- 评论人昵称、评论时间、评论内容、回复 -->
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="5dp">
+	        <!-- 评论人昵称 -->
+	        <TextView 
+	            android:id="@+id/commentNickname"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12sp"
+	            android:textColor="#23238E"
+	            android:layout_alignParentLeft="true"
+	            android:text="小米"/>
+	        <!-- 回复   -->
+	        <TextView 
+	            android:id="@+id/replyText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="16sp"  
+	            android:textColor="#23238E"	            
+	            android:text="回复"
+	            android:layout_marginRight="10dp"
+	            android:layout_alignParentRight="true"/>
+	        <!-- 评论时间 -->
+	         <TextView 
+	            android:id="@+id/commentItemTime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12sp"	            
+	            android:layout_below="@id/commentNickname"
+	            android:layout_alignParentLeft="true"
+	            android:text="2015-11-7"/>
+	         <!-- 评论人内容 -->
+	         <TextView 
+	            android:id="@+id/commentItemContent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="14sp"
+	            android:autoLink="web|email" 
+	            android:layout_below="@id/commentItemTime"
+	            android:layout_alignParentLeft="true"       
+	            android:text="不错，可以考虑一下买不买。"
+	            android:lineSpacingExtra="9dp"
+	            />
+	    </RelativeLayout>
+        
+    
+</LinearLayout>

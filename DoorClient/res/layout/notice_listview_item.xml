@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 小区公告的listview 子布局 -->
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:background="@color/white"
+    >
+
+	    <TextView 
+	        android:id="@+id/notice_content_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height= "48dp"
+	        android:paddingLeft="10dp"  
+	        android:gravity="center_vertical"
+	        android:textSize="16sp"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"      
+	        android:singleLine="true"
+	        android:ellipsize="end"  
+	        android:textStyle="bold"
+	        android:text="旅游信息您的位置"   
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/notice_content_date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/notice_content_title"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="10dp"
+	        android:layout_alignParentLeft="true"
+	        android:textSize="16sp"
+	        android:text="2015-10-23"
+	        />
+	      
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp" >
+    
+    <ImageView
+        android:id="@+id/friend_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"/>
+    
+    <TextView 
+        android:id="@+id/friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/friend_image"
+         android:layout_centerVertical="true"
+        android:text="name"
+        android:textSize="21sp"/>
+    
+    <TextView 
+        android:id="@+id/friend_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:text="有新消息"
+        android:textColor="#ff0000"
+        android:textSize="15sp"
+        android:alpha="0.6"
+        android:visibility="gone"/>
+	
+</RelativeLayout>

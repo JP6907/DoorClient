@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:isScrollContainer="true"
+    android:scrollbars="vertical"
+    >
+    
+    
+    <com.example.communityfunction.food.FoodTitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+				        />
+	<ScrollView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:scrollbars="vertical"
+		android:fadingEdge="vertical"
+				>
+			<LinearLayout   
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content" 
+			    android:orientation="vertical" 
+			    android:scrollbarStyle="outsideOverlay"  
+				    
+				    >
+				   
+				    
+				    <RelativeLayout 
+				       android:layout_width="match_parent"
+				       android:layout_height="wrap_content"  
+				      >
+				
+						     <ImageView
+						         android:id="@+id/food_image"
+						         android:layout_width="match_parent"
+						         android:layout_height="210dp"
+						         android:contentDescription="食物图片"
+						         android:scaleType="fitXY"
+						         android:src="@drawable/ic_launcher" />
+						     
+						     	
+							      <TextView
+							          android:id="@+id/brief_information_above"
+							          android:layout_width="match_parent"
+							          android:layout_height="wrap_content"
+							          android:layout_alignBaseline="@id/food_image"
+							          android:layout_margin="8dp"
+							          android:text="明月餐厅"
+							          android:textSize="20sp" 
+							          android:textColor="#ffffff"
+							          android:background="@android:color/transparent"
+							          />
+				
+							      <TextView 
+							          android:id="@+id/brief_information_below"
+							          android:layout_width="match_parent"
+							          android:layout_height="wrap_content"
+							          android:layout_below="@id/brief_information_above"
+							          android:layout_marginLeft="10dp"
+							          android:textSize="12sp" 
+							          android:text="4人餐， 免费WiFi"
+							          android:textColor="#ffffff"
+							          android:background="@android:color/transparent"
+							          />
+							    		      
+				      
+				     </RelativeLayout>
+				   
+				     <RelativeLayout 
+				         android:layout_width="match_parent"
+				         android:layout_height="wrap_content"  
+				         android:background="#ffffff"
+				         >
+				     <TextView
+							          android:id="@+id/food_price"
+							          android:layout_width="wrap_content"
+							          android:layout_height="wrap_content"			         
+							          android:layout_margin="5dp"
+							          android:text="79元"
+							          android:textSize="30sp" 
+							          android:textColor="#0000ff"		      
+							          />
+				
+							      <TextView 
+							          android:id="@+id/food_pre_price"
+							          android:layout_width="wrap_content"
+							          android:layout_height="wrap_content"
+							          android:layout_toRightOf="@id/food_price"
+							          android:layout_alignBaseline="@id/food_price"
+							          android:layout_marginLeft="10dp"
+							          android:textSize="18sp" 
+							          android:text="100元"		       
+							          />
+							      
+							      <Button 
+							          android:id="@+id/purchase_button"
+							          android:layout_width="wrap_content"
+							          android:layout_height="wrap_content"
+							          android:layout_alignParentRight="true"			      
+							          android:layout_alignBaseline="@id/food_price"
+							          android:layout_marginRight="30dp"
+							          android:text="立即购买"
+							         
+							          />
+							      
+							      <TextView 
+							          android:id="@+id/purchased_number"
+							          android:layout_width="wrap_content"
+							          android:layout_height="wrap_content"
+							          android:layout_below="@id/purchase_button"
+							          android:layout_alignParentRight="true"
+							          android:layout_margin="5dp"
+							          android:layout_alignLeft="@id/purchase_button"
+							          android:text="已售100"
+							          />
+				     </RelativeLayout>
+				     
+				      
+				     <TextView 
+				        android:layout_width="match_parent"
+				        android:layout_height="10dp"
+				        />
+				     
+				        <TextView 
+				         android:id="@+id/purchase_introduce"
+				         android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:padding="5dp"
+						 android:textSize="20sp"	
+						 android:background="#ffffff"
+						 android:text="商家信息" 
+						  /> 
+						  
+					<TextView 
+				        android:layout_width="match_parent"
+				        android:layout_height="2dp"
+				        />
+				     <RelativeLayout 
+				         android:layout_width="match_parent"
+				         android:layout_height="wrap_content" 
+				           android:background="#ffffff"    
+				         >
+						     <LinearLayout
+						         android:id="@+id/ss" 
+						         android:layout_width="wrap_content"         
+						         android:layout_height="wrap_content"
+						         android:layout_alignParentTop="true"
+						         android:layout_alignParentLeft="true"
+						         android:background="#ffffff"
+						         android:orientation="vertical"
+						         >
+						         
+								                
+								     <TextView 
+								         android:id="@+id/phonenumber"
+								         android:layout_width="wrap_content"
+										 android:layout_height="40dp"
+										 android:textSize="16sp"
+										 android:padding="5dp"
+										 android:background="#ffffff"
+										 android:text=" 联系方式：12353266671"
+										 
+								         />  
+								         
+										     
+						          <TextView 
+								         android:id="@+id/detail_address"
+								         android:layout_width="match_parent"
+										 android:layout_height="wrap_content"
+										 android:textSize="16sp"					
+										 android:padding="5dp"
+										 android:background="#ffffff"
+										 android:text=" 地址：大学城广工二饭"
+										 			     />  
+						     
+						     </LinearLayout>   
+						  
+						     
+						       				     
+								      <ImageButton 
+								          android:id="@+id/dial_button"
+								          android:layout_width="40dp"     
+								          android:layout_height="40dp" 
+								          android:layout_alignParentRight="true"
+								          android:layout_marginRight="20dp"
+								          android:layout_centerVertical="true"
+								          android:src="@drawable/food_dial"  
+								          android:scaleType="fitXY"
+								          android:background="@android:color/transparent"       		         
+											    />
+				
+				     </RelativeLayout> 
+				   
+				     <TextView 
+				        android:layout_width="match_parent"
+				        android:layout_height="15dp"
+				        />
+				     
+				     <TextView 
+				         android:id="@+id/purchase_introduce"
+				         android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:padding="5dp"
+						 android:textSize="20sp"	
+						 android:background="#ffffff"
+						 android:text="购买须知" 
+						  /> 
+					<TextView 
+				        android:layout_width="match_parent"
+				        android:layout_height="2dp"
+				        />
+				      
+				         
+				     <TextView 
+				         android:id="@+id/description"
+				         android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:textSize="16sp"
+						 android:padding="5dp"
+						 android:background="#ffffff"
+						 android:text="    音乐是最受大众喜爱的艺术品种之一,而乐谱是音乐的重要载体,在记录、演唱(奏)、学习、欣赏、研究、传播音乐等方面具有很重要的作用。本站就是为适应大众对乐谱这种载体的需要而建立的专业乐谱网站，主要内容是免费提供古今中外部分名曲的歌谱和适量的钢琴谱（也有少量电子琴谱或其它的乐谱）。从总体来说，这些名曲或者具有久唱(奏)不衰的魅力,或者具有一定的历史价值，或者具有一定的教育启迪作用，或者具有一定社会人文认识意义，或者兼而有之。本站的这种服务，是为了给网友们基于欣赏、自娱、学习、研究音乐的需要提供某些方便，也希望为普及、传播大众音乐及五线谱出点绵力。古今名曲如浩瀚大海，穷一生之工也难取其万一，这里只能提供沧海的一滴。"
+						 
+				         />
+				    <TextView 
+				        android:layout_width="match_parent"
+				        android:layout_height="15dp"
+				        />
+				       <TextView 
+				         android:id="@+id/customer_evaluate"
+				         android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:padding="5dp"
+						 android:textSize="20sp"	
+						 android:background="#ffffff"
+						 android:text="食客评价" 
+						  />    
+					 <TextView 
+				        android:layout_width="match_parent"
+				        android:layout_height="2dp"
+				        />
+				     <ListView
+				         android:id="@+id/evaluate_listview" 
+				         android:layout_width="match_parent"
+				         android:layout_height="wrap_content"
+				         android:dividerHeight="4sp"
+				         android:background="#ffffff"        
+				         ></ListView>
+				     
+				         <TextView 
+				        android:layout_width="match_parent"
+				        android:layout_height="10dp"
+				        />
+				                
+				         
+			  </LinearLayout>
+	
+	  </ScrollView> 
+ 
+ 
+ </LinearLayout>
+ 

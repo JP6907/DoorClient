@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.communityfunction.food.FoodTitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+         android:id="@+id/scroll_restaurant_food"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp" >
+
+                <ImageView
+                    android:id="@+id/restaurant_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/re_image1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:padding="2dp" >
+
+                    <RatingBar
+                        android:id="@+id/evaluate_star"
+                        style="@style/roomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="6dp"
+                        android:numStars="5" />
+
+                    <TextView
+                        android:id="@+id/restaurant_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center_vertical"
+                        android:text="明月餐厅"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/restaurant_name"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="2dp"
+                        android:text="11.2km" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/restaurant_name"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/distance"
+                        android:text="广工二饭" />
+
+                    <TextView
+                        android:id="@+id/evaluate_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/evaluate_star"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@id/evaluate_star"
+                        android:text="3.9分" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.example.communityfunction.myView.NoScrollListView
+                android:id="@+id/food_information_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#ffffff"
+                android:dividerHeight="6sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

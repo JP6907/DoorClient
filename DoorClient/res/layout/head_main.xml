@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/theme_color" >
+
+    <ImageView
+        android:id="@+id/topButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/image_head"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/topTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/open_door"
+        android:textColor="@color/white"
+        android:textSize="21sp"/>
+    
+      <ImageButton
+        android:id="@+id/topButtonRight"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/menu_button_plus" 
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:contentDescription="@null" />
+
+</RelativeLayout>

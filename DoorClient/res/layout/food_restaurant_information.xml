@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.communityfunction.food.FoodTitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <Spinner
+            android:id="@+id/select_restaurant"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+        <!-- 暂时不知道用来做什么 -->
+
+        <Spinner
+            android:id="@+id/locate_near"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+    </LinearLayout>
+<!--  
+    <Button
+        android:id="@+id/address_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="点击刷新当前你所处的位置"
+        android:textSize="17sp" />
+-->
+    
+    <com.example.communityfunction.pulltorefreshlistview.view.RefreshListView
+        android:id="@+id/restaurant_information_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:dividerHeight="4sp"
+        android:divider="#ffffff"
+        android:padding="2dp" />
+
+
+
+</LinearLayout>

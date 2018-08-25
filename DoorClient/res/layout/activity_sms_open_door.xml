@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/head_other"/>
+    
+    <EditText
+	    android:id="@+id/phone"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="80dp"
+	    android:background="@drawable/login_edit_normal"
+	    android:singleLine="true"
+	    android:text="DOOR_01"
+	    android:textSize="18sp"
+	    android:editable="false"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true">
+        
+        <Button
+	        android:id="@+id/send" 
+	        android:layout_width="60dp"
+	        android:layout_height="40dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_centerVertical="true"
+	        android:textSize="20sp"
+			android:background="@drawable/btn_style_white"
+	        android:text="发送" />
+         
+        
+        <EditText
+	        android:id="@+id/content"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp"
+	        android:layout_toLeftOf="@id/send"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/login_edit_normal"
+	        android:layout_centerVertical="true"
+	        android:singleLine="true"
+	        android:textSize="18sp"
+	        android:inputType="textPassword"
+	        android:hint="请输入密码"/>
+         
+    </RelativeLayout>
+
+</RelativeLayout>

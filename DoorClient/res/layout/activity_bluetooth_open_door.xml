@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id = "@+id/devices"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <include layout="@layout/head_other" android:id="@+id/head"/>
+    
+    <RelativeLayout
+        android:id="@+id/bluetooth_rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true">
+        
+    <Button 
+        android:id="@+id/bt_bluetooth_open_door"
+		android:layout_width="60dp" 
+		android:layout_height="40dp"  
+		android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_centerVertical="true"
+	    android:textSize="20sp"
+		android:text="@string/open_door"
+		android:background="@drawable/btn_style_white"/> 
+	
+    <EditText
+	        android:id="@+id/bluetooth_password"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp"
+	        android:layout_toLeftOf="@id/bt_bluetooth_open_door"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/login_edit_normal"
+	        android:layout_centerVertical="true"
+	        android:singleLine="true"
+	        android:textSize="18sp"
+	        android:inputType="textPassword"
+	        android:hint="请输入密码"/>
+    		
+    </RelativeLayout>
+
+	 <ListView  
+	    android:id="@+id/list"
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent" 
+	    android:padding="10dp"
+	    android:scrollingCache="false" 
+	    android:layout_above ="@id/bluetooth_rl_bottom" 
+	    android:layout_below="@id/head"
+	    />
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true" >
+
+	<include layout="@layout/head_other" android:id="@+id/title"/>
+    
+    <RelativeLayout
+	    android:id="@+id/bottom"
+	    android:layout_width="fill_parent"
+	    android:layout_height="48dp"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/theme_color" >
+	        
+	    <Button
+		    android:id="@+id/btn_send" 
+		    android:layout_width="60dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+		    android:layout_centerVertical="true"
+		    android:background="@drawable/normal_btn"
+		    android:textColor="@color/text_color"
+		    android:text="发送" />
+	         
+	    <EditText
+		    android:id="@+id/et_content"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+		    android:layout_toLeftOf="@id/btn_send"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="@drawable/login_edit_normal"
+		    android:layout_centerVertical="true"
+		    android:singleLine="true"
+		    android:textSize="18sp"
+		    android:hint="说些什么呢"/>   
+	</RelativeLayout>
+
+    <ListView 
+	    android:id="@+id/lv_chat"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:divider="@null"
+	    android:layout_below="@id/title"
+	    android:layout_above="@id/bottom">      
+	</ListView>
+	   
+</RelativeLayout>
+
+

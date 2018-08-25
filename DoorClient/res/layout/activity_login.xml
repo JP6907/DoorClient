@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color">
+    
+    <include layout="@layout/head_other" android:id="@id/head"/>
+    
+    <neo.door.utils.CircleImageView
+        xmlns:leo="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/login_circle_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/image_head"
+        app:border_color="#00000000"
+        app:border_width="1dp" />
+    
+    <EditText 
+        android:id="@+id/et_login_username"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/login_circle_image"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login_edit"
+        android:singleLine="true"
+        android:hint="请输入用户名或电话"
+        android:inputType="text"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnm
+        				QWERTYUIOPASDFGHJKLZXCVBNM"/>
+    
+  <!--<View 
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/et_login_username"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/theme_color"/>
+    -->
+    <EditText 
+        android:id="@+id/et_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_login_username"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login_edit"
+        android:singleLine="true"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnm
+        				QWERTYUIOPASDFGHJKLZXCVBNM"/>
+    
+    <!--  <View 
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/et_login_password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/theme_color"/>
+    -->
+    <Button 
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_login_password"
+        android:layout_marginTop="50dp"
+        android:layout_alignLeft="@id/et_login_username"
+        android:layout_alignRight="@id/et_login_username"
+        android:text="登录"
+        android:background="@drawable/nomal_login_btn"/>
+    
+    <Button 
+        android:id="@+id/btn_forgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/et_login_username"
+        android:layout_alignRight="@id/et_login_username"
+        android:text="忘记密码"
+        android:clickable="true"
+        android:background="@drawable/nomal_login_btn"/>
+     
+    <TextView 
+        android:id="@+id/tv_to_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:text="注册"
+        android:textSize="15sp"
+        android:textColor="@color/background_color"
+        android:clickable="true"/>
+
+    
+    
+</RelativeLayout>

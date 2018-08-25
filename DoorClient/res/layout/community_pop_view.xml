@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liner"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:animateLayoutChanges="true"
+    android:background="@color/theme_color"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/btn_community_forum"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/bbs_line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/divider_line" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_bbs_blue" />
+
+        <TextView
+            android:id="@+id/tv_bbs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="论坛"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <!--
+                     <View 
+                   
+                   android:layout_width="0.5dp"
+                   android:layout_height="match_parent"
+                   android:background="@color/divider_line"/>
+    -->
+
+    <LinearLayout
+        android:id="@+id/btn_community_announcement"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/bbs_line2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/divider_line" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_sound_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="小区公告"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <!--
+                   <View 
+                   android:layout_width="0.5dp"
+                   android:layout_height="match_parent"
+                   android:background="@color/divider_line"/>
+    -->
+
+    <LinearLayout
+        android:id="@+id/btn_community_housekeeping"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/bbs_line3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/divider_line" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_service_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="家政服务"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <!-- </LinearLayout> -->
+
+
+    <!--
+                  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+    -->
+
+    <LinearLayout
+        android:id="@+id/btn_community_fit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/bbs_line4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/divider_line" />
+
+        <ImageView
+            android:id="@+id/fit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_fit_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="维修"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <!--
+                   <View 
+                   android:layout_width="0.5dp"
+                   android:layout_height="match_parent"
+                   android:background="@color/divider_line"/>
+    -->
+
+    <LinearLayout
+        android:id="@+id/btn_community_food"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/bbs_line5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/divider_line" />
+
+        <ImageView
+            android:id="@+id/fit1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_food_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="美食"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <!--
+                   <View 
+                   android:layout_width="0.5dp"
+                   android:layout_height="match_parent"
+                   android:background="@color/divider_line"/>
+    -->
+
+    <LinearLayout
+        android:id="@+id/btn_community_other"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/bbs_line6"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/divider_line" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_food_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="敬请期待"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/head_other" android:id="@id/head"/>
+    
+    <EditText 
+        android:id="@+id/et_register_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        android:singleLine="true"
+        android:hint="请输入电话"
+        android:inputType="number"/>
+    
+    <View 
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/et_register_phone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/theme_color"/>
+    
+    <EditText 
+        android:id="@+id/et_register_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_register_phone"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        android:singleLine="true"
+        android:hint="请输入密码(至少6位)"
+        android:inputType="textPassword"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnm
+        				QWERTYUIOPASDFGHJKLZXCVBNM"/>
+    
+    <View 
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/et_register_password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/theme_color"/>
+    
+    <EditText 
+        android:id="@+id/et_register_password_again"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_register_password"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        android:singleLine="true"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnm
+        				QWERTYUIOPASDFGHJKLZXCVBNM"/>
+    
+    <View 
+        android:id="@+id/line4"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/et_register_password_again"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/theme_color"/>
+    
+    <Button 
+        android:id="@+id/btn_get_verifi_code"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+		android:layout_below="@id/et_register_password_again"
+        android:layout_alignRight="@id/et_register_phone"
+        android:layout_marginTop="40dp"
+        android:text="获取验证码"
+        android:background="@drawable/normal_btn"/>
+    
+    <View 
+        android:id="@+id/line3"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@id/btn_get_verifi_code"
+        android:layout_alignBottom="@id/btn_get_verifi_code"
+        android:background="@color/theme_color"/>
+    
+    <EditText 
+        android:id="@+id/et_verifi_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toLeftOf="@id/btn_get_verifi_code"
+ 		android:layout_above="@id/line3"
+ 		android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:singleLine="true"
+        android:hint="请输入验证码"
+        android:inputType="number"/>
+    
+    
+    
+    <Button 
+        android:id="@+id/btn_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_verifi_code"
+        android:layout_marginTop="60dp"
+        android:layout_alignLeft="@id/et_register_phone"
+        android:layout_alignRight="@id/et_register_phone"
+        android:text="注册"
+        android:background="@drawable/normal_btn"/>
+    
+     
+    <TextView 
+        android:id="@+id/tv_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="登录"
+        android:textSize="15sp"
+        android:textColor="@color/background_color"
+        android:clickable="true"/>
+    
+    
+</RelativeLayout>

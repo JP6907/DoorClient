@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+     <RelativeLayout 
+        android:id="@+id/id_top_ly"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#ee000000"
+        android:clipChildren="true"
+        >
+        
+        <ImageView 
+            android:id="@+id/id_imageloader_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/image_back" />
+        
+        <Button 
+            android:id="@+id/id_check_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:text="完成"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:clickable="true"
+            />
+    </RelativeLayout>
+    
+     <RelativeLayout 
+        android:id="@+id/id_bottom_ly"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ee000000"
+        android:clipChildren="true"
+        >
+        
+        <TextView 
+            android:id="@+id/id_dir_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="所有图片"
+            android:textColor="@android:color/white" />
+        
+        <TextView 
+            android:id="@+id/id_dir_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:text="100张"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+    
+    <GridView 
+        android:id="@+id/id_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        android:layout_below="@id/id_top_ly"
+        android:layout_above="@id/id_bottom_ly">
+        
+    </GridView>
+    
+    
+    
+
+</RelativeLayout>

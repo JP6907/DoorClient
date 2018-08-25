@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bbs_item_title">20sp</dimen>
+    <dimen name="tvUsername">21sp</dimen>
+    
+</resources>
